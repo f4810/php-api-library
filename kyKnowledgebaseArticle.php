@@ -130,7 +130,7 @@ class kyKnowledgebaseArticle extends kyObjectBase {
 		$this->subject = ky_assure_string($data['subject']);
 		$this->contents = ky_assure_string($data['contents']);
 		$this->creator_id = ky_assure_int($data['creatorid']);
-		$this->article_status = ky_assure_bool($data['articlestatus']);
+		$this->article_status = ky_assure_int($data['articlestatus']);
 		$this->is_featured = ky_assure_bool($data['isfeatured']);
 		$this->allow_comments = ky_assure_bool($data['allowcomments']);
 		$this->total_comments = ky_assure_int($data['totalcomments']);
